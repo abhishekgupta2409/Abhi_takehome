@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    {{ title }}
+  </h1>
+  <form [formGroup]="filterForm" (ngSubmit)="onSubmit()">
+    <label for="filterTextInput"> Filter </label>
+    <input id="filterTextInput" type="text" formControlName="filter" />
+    <button type="submit" class="button">Submit</button>
+  </form>
+  <viz-component [data]="data"></viz-component>
+</div>
